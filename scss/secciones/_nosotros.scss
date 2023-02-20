@@ -10,25 +10,27 @@
 
 .main-nosotros{
     background-color: $color-fondo;
-    grid-area: main-nosotros;
-    flex-wrap: wrap;
-    @include main (main-nosotros);
     .contenedor-cuarteles{
+        margin: 20px;
+        justify-content: center;
+        display: flex;
         flex-wrap: wrap;
-        @extend %card;
-        h2{
-            @extend %titulo-noticia;
-        }
-        img{
-            @extend %foto-noticia;
-        }
-        p{
-            @extend %texto-noticia;
-        }
+        flex-direction: column;
     }
-}
+
+    @include main (main-nosotros);
+    .cuarteles{
+        text-align: center;
+        max-width: 1000px;
+        @extend %card;
+        img{ @extend %foto-noticia;}
+        h2 {@extend %titulo-noticia;}
+        p {@extend %texto-noticia;}
+    }
+} 
 
 .aside-nosotros{
+    grid-area: aside-nosotros;
     @extend %aside-lateral;
 }
 
