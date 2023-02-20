@@ -1,0 +1,36 @@
+/*Contenido de nosotros*/
+.contenedor-nosotros{
+    @include grid (3fr , 0.5fr , 0.5fr , 2fr , 2fr , 0.5fr);
+    grid-template-areas:
+    "header header"
+    "main-nosotros main-nosotros"
+    "aside-nosotros aside-nosotros"
+    "footer footer";
+}
+
+.main-nosotros{
+    background-color: $color-fondo;
+    grid-area: main-nosotros;
+    flex-wrap: wrap;
+    @include main (main-nosotros);
+    .contenedor-cuarteles{
+        flex-wrap: wrap;
+        @extend %card;
+        h2{
+            @extend %titulo-noticia;
+        }
+        img{
+            @extend %foto-noticia;
+        }
+        p{
+            @extend %texto-noticia;
+        }
+    }
+}
+
+.aside-nosotros{
+    @extend %aside-lateral;
+}
+
+@include tablet-nosotros;
+@include ordenador-nosotros;

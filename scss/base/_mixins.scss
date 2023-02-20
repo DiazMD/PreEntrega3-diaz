@@ -1,0 +1,39 @@
+@mixin reset{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+@mixin main ($name-grid){
+padding: 15px;
+height: 100%;
+display: flex;
+flex-wrap: wrap;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+grid-area: $name-grid;
+}
+
+@mixin footer{
+    background-color: $fondo-footer;
+    color: white;
+    padding: 15px;
+    width: 100%;
+    grid-area: footer;
+}
+
+@mixin contenedor-footer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: auto;
+}
+
+
+@mixin grid ($valor1 , $valor2 , $valor3 , $valor4 , $valor5 , $valor6){
+    display: grid;
+    grid-template-columns:($valor1 , $valor2);
+    grid-template-rows: ($valor3 , $valor4 , $valor5 , $valor6);
+}

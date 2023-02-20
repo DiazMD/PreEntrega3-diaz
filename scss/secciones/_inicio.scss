@@ -1,0 +1,114 @@
+/*Contenido del index*/
+
+@import "../base/variables";
+@import "../base/mixins";
+@import "../base/extend";
+@import "../base/mqr";
+
+.contenedor-index{
+    @include grid (3fr , 0.5fr , 0.5fr , 2fr , 2fr , 0.5fr);
+    grid-template-areas:
+    "header header"
+    "main-inicio main-inicio"
+    "aside-inicio aside-inicio"
+    "footer footer";
+}
+
+header{
+    grid-area: header;
+    .navbar{
+        height: 100%;
+    }
+    .header-fondo{
+            background-color: $fondo-header;
+            .container-fluid{
+                background-color: $fondo-header;
+                .navbar-brand{
+                    background-color: $fondo-header;
+                    .navbar-titulo{
+                        background-color: $fondo-header;
+                    }
+                    .d-inline-block{
+                        background-color: $fondo-header;
+                    }
+                    .nav-item{
+                        width: 100%!important;
+                        justify-content: flex-end;
+                    }
+                }
+            }
+    }
+    .navbar-nav{
+        width: 100%;
+    }
+    .navbar-titulo{
+        display: inline-block;
+        color: white;
+    }
+    .navbar-menu{
+        color: white;
+        a{
+            color: white;
+            a:visited{
+                color: white;
+            }
+        }
+    }
+    ul .desplegable-fondo{
+        background-color: $fondo-desplegable;
+        li{
+            background-color: $fondo-desplegable;
+        }
+    }
+}
+
+
+.main-inicio{
+    background-color: $color-fondo;
+    .contenedor-noticias{
+        margin: 20px;
+        justify-content: center;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    @include main (main-inicio);
+    .card-noticias{
+        max-width: 300px;
+        text-align: center;
+        @extend %card;
+        img{ @extend %foto-noticia;}
+        h2 {@extend %titulo-noticia;}
+        p {@extend %texto-noticia;}
+    }
+} 
+
+.aside-inicio{
+    grid-area: aside-inicio;
+    @extend %aside-lateral;
+}
+
+footer{
+    grid-area: footer;
+     @include footer;
+     hr{
+        height: 1px;
+        background-color: $separador;
+     }
+     .contenedor-footer{
+        @include contenedor-footer;
+     }
+     a{
+        .icono{
+            color: white;
+            font-weight: 600;
+            font-size: 30px;
+        }
+        .icono:hover{
+            transform: rotate(360deg);
+            transition: 0.9s;
+        }
+     }
+}
+
+@include ordenador;
+@include tablet;

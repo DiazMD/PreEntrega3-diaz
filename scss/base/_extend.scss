@@ -1,0 +1,33 @@
+// Cards inicio
+%card {
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.15);
+    padding: 15px;
+    margin: 15px;
+    text-align: center;
+}
+
+%foto-noticia{
+    width: 200px;
+    height: 200px;
+}
+
+%titulo-noticia{
+    font-weight: 250;
+}
+
+%texto-noticia{
+    font-weight: 75;
+}
+
+
+// Aside general
+%aside-lateral{
+display: none;
+justify-content: center;
+background-color: $fondo-aside;
+color: white;
+text-align: center;
+justify-content: center;
+}

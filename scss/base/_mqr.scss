@@ -1,0 +1,53 @@
+/*Mediaquerys inicio*/
+@mixin tablet{
+    @media screen and (min-width:768px){
+        .aside-inicio{
+            display: block;
+        }
+    }
+}
+
+@mixin ordenador{
+    @media screen and (min-width:1024px){
+        .aside-inicio{
+            display: block;
+
+        }
+        .contenedor-noticias{
+            justify-content: center;
+            @include grid (3fr , 1fr , 0.5fr , 2fr , 2fr , 0.5fr);
+            grid-template-areas:
+            "header header"
+            "main-inicio aside"
+            "main-inicio aside"
+            "footer footer";
+        }
+    }
+}
+
+/*Mediaquerys nosotros*/
+@mixin tablet-nosotros{
+    @media screen and (min-width:768px){
+        .aside-nosotros{
+            display: block;
+        }
+    }
+}
+
+@mixin ordenador-nosotros{
+    @media screen and (min-width:1024px){
+        .aside-nosotros{
+            display: block;
+
+        }
+        .contenedor-cuarteles{
+            justify-content: center;
+            @include grid (3fr , 1fr , 0.5fr , 2fr , 2fr , 0.5fr);
+            grid-template-areas:
+            "header header"
+            "main-inicio aside"
+            "main-inicio aside"
+            "footer footer";
+        }
+    }
+}
