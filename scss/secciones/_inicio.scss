@@ -66,10 +66,7 @@ header{
 .main-inicio{
     background-color: $color-fondo;
     .contenedor-noticias{
-        margin: 20px;
-        justify-content: center;
-        display: flex;
-        flex-wrap: wrap;
+        @extend %contenedores;
     }
     @include main (main-inicio);
     .card-noticias{

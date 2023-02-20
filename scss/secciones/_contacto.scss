@@ -1,0 +1,30 @@
+/*Contenido de nosotros*/
+.contenedor-contacto{
+    @include grid (3fr , 0.5fr , 0.5fr , 2fr , 2fr , 0.5fr);
+    grid-template-areas:
+    "header header"
+    "main-contacto main-contacto"
+    "aside-contacto aside-contacto"
+    "footer footer";
+}
+
+.main-contacto{
+    background-color: $color-fondo;
+    .contenedor-informacion{
+        @extend %contenedores;
+    }
+    @include main (main-contacto);
+    .informacion{
+        @extend %card;
+        h2 {@extend %titulo-noticia;}
+        p {@extend %texto-noticia;}
+    }
+}
+
+.aside-contacto{
+    grid-area: aside-contacto;
+    @extend %aside-lateral;
+}
+
+@include tablet-contacto;
+@include ordenador-contacto;
