@@ -3,7 +3,7 @@
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 1px 1px 10px 0px rgba(0,0,0,0.15);
-    padding: 15px;
+    padding: 20px;
     margin: 15px;
     text-align: center;
 }
@@ -37,4 +37,13 @@ justify-content: center;
     justify-content: center;
     display: flex;
     flex-wrap: wrap;
+}
+
+%boton{
+    background-color: $fondo-header ;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    margin-top: 1rem;
+    padding: 0.7rem 1rem 0.7rem 1rem;
 }

@@ -4,7 +4,7 @@
   background-color: #fff;
   border-radius: 10px;
   box-shadow: 1px 1px 10px 0px rgba(0, 0, 0, 0.15);
-  padding: 15px;
+  padding: 20px;
   margin: 15px;
   text-align: center; }
 
@@ -31,6 +31,14 @@
   justify-content: center;
   display: flex;
   flex-wrap: wrap; }
+
+.main-inicio .card-noticias a {
+  background-color: #a82727;
+  text-decoration: none;
+  color: white;
+  border-radius: 5px;
+  margin-top: 1rem;
+  padding: 0.7rem 1rem 0.7rem 1rem; }
 
 /*Mediaquerys inicio*/
 /*Mediaquerys nosotros*/
@@ -89,6 +97,9 @@ header {
   .main-inicio .card-noticias {
     max-width: 300px;
     text-align: center; }
+    .main-inicio .card-noticias a:hover {
+      box-shadow: 3px 3px 8px black;
+      transition: 0.3s; }
 
 .aside-inicio {
   grid-area: aside-inicio; }
