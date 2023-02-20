@@ -79,7 +79,7 @@
     }
 }
 
-/*Mediaquerys galeria*/
+/*Mediaquerys galería*/
 @mixin tablet-galeria{
     @media screen and (min-width:768px){
         .aside-galeria{
@@ -99,8 +99,36 @@
             @include grid (3fr , 1fr , 0.5fr , 2fr , 2fr , 0.5fr);
             grid-template-areas:
             "header header"
-            "main-inicio aside"
-            "main-inicio aside"
+            "main-galeria aside-galeria"
+            "main-galeria aside-galeria"
+            "footer footer";
+        }
+    }
+}
+
+
+/*Mediaquerys inscripción*/
+
+@mixin tablet-inscripcion{
+    @media screen and (min-width:768px){
+        .aside-inscripcion{
+            display: block;
+        }
+    }
+}
+
+@mixin ordenador-inscripcion{
+    @media screen and (min-width:1024px){
+        .aside-inscripcion{
+            display: block;
+        }
+        .contenedor-form{
+            justify-content: center;
+            @include grid (3fr , 1fr , 0.5fr , 2fr , 2fr , 0.5fr);
+            grid-template-areas:
+            "header header"
+            "main-inscripcion aside-inscripcion"
+            "main-inscripcion aside-inscripcion"
             "footer footer";
         }
     }

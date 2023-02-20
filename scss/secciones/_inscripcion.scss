@@ -1,0 +1,60 @@
+/*Contenido de inscripción*/
+.contenedor-inscripcion{
+    @include grid (3fr , 0.5fr , 0.5fr , 2fr , 2fr , 0.5fr);
+    grid-template-areas:
+    "header header"
+    "main-inscripcion main-inscripcion"
+    "aside-inscripcion aside-inscripcion"
+    "footer footer";
+}
+
+.main-inscripcion{
+    background-color: $color-fondo;
+    .contenedor-form{
+        @extend %contenedores;
+        flex-direction: column;
+    }
+
+    @include main (main-inscripcion);
+    .inscribite{
+        text-align: center;
+        color: white;
+        background-color: $fondo-header;
+        max-width: 800px;
+        flex-wrap: wrap;
+        cursor: pointer;
+        @extend %card;
+        h2 {@extend %titulo-noticia;}
+        p {@extend %texto-noticia;}
+    }
+
+    fieldset{
+        box-shadow: 3px 3px 10px black;
+        width: 500px;
+        margin: 0 auto;
+        padding: 10px;
+        border: 1px black solid;
+        border-radius: 10px;
+        background-color: white;
+        color: black;
+    }
+    fieldset:hover{
+        box-shadow: 1px 1px 15px $fondo-header;
+        transition: 0.6s;
+    }
+
+    .nombre-apellido, .edad, .sexo, .direccion, .mail{
+        display: inline-block;
+        width: 250px;
+        padding: 10px;
+    }
+} 
+
+.aside-inscripcion{
+    grid-area: aside-inscripcion;
+    @extend %aside-lateral;
+}
+
+
+@include tablet-inscripcion;
+@include ordenador-inscripcion;
