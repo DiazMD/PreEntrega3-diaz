@@ -112,7 +112,7 @@
 @mixin tablet-inscripcion{
     @media screen and (min-width:768px){
         .aside-inscripcion{
-            display: block;
+            display: block; 
         }
     }
 }
@@ -130,6 +130,12 @@
             "main-inscripcion aside-inscripcion"
             "main-inscripcion aside-inscripcion"
             "footer footer";
+            .inscribite{
+                width: 800px;
+                 fieldset{
+                    width: 500px;
+                 }
+            }
         }
     }
 }

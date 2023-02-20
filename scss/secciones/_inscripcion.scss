@@ -20,7 +20,7 @@
         text-align: center;
         color: white;
         background-color: $fondo-header;
-        max-width: 800px;
+        width: 450px;
         flex-wrap: wrap;
         cursor: pointer;
         @extend %card;
@@ -30,7 +30,7 @@
 
     fieldset{
         box-shadow: 3px 3px 10px black;
-        width: 500px;
+        width: 300px;
         margin: 0 auto;
         padding: 10px;
         border: 1px black solid;

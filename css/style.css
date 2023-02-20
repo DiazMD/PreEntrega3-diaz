@@ -272,12 +272,12 @@ footer {
     text-align: center;
     color: white;
     background-color: #a82727;
-    max-width: 800px;
+    width: 450px;
     flex-wrap: wrap;
     cursor: pointer; }
   .main-inscripcion fieldset {
     box-shadow: 3px 3px 10px black;
-    width: 500px;
+    width: 300px;
     margin: 0 auto;
     padding: 10px;
     border: 1px black solid;
@@ -307,7 +307,11 @@ footer {
     display: grid;
     grid-template-columns: 3fr, 1fr;
     grid-template-rows: 0.5fr, 2fr, 2fr, 0.5fr;
-    grid-template-areas: "header header" "main-inscripcion aside-inscripcion" "main-inscripcion aside-inscripcion" "footer footer"; } }
+    grid-template-areas: "header header" "main-inscripcion aside-inscripcion" "main-inscripcion aside-inscripcion" "footer footer"; }
+    .contenedor-form .inscribite {
+      width: 800px; }
+      .contenedor-form .inscribite fieldset {
+        width: 500px; } }
 
 * {
   padding: 0;
