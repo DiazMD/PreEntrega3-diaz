@@ -1,0 +1,39 @@
+/*Contenido de galeria*/
+.contenedor-galeria{
+    @include grid (3fr , 0.5fr , 0.5fr , 2fr , 2fr , 0.5fr);
+    grid-template-areas:
+    "header header"
+    "main-galeria main-galeria"
+    "aside-galeria aside-galeria"
+    "footer footer";
+}
+
+.main-galeria{
+    background-color: $color-fondo;
+    .contenedor-fotos{
+        @extend %contenedores;
+    }
+
+    @include main (main-galeria);
+    .imagen-galeria{
+        text-align: center;
+        max-width: 300px;
+        cursor: pointer;
+        @extend %card;
+        img{ @extend %foto-noticia;}
+
+    }
+    .imagen-galeria:hover{
+        transform: scale(2.0);
+        filter: drop-shadow(10px 10px 10px);
+        transition: 0.8s;
+    }
+} 
+
+.aside-galeria{
+    grid-area: aside-galeria;
+    @extend %aside-lateral;
+}
+
+@include tablet-galeria;
+@include ordenador-galeria;

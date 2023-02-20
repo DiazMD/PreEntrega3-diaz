@@ -18,8 +18,8 @@
             @include grid (3fr , 1fr , 0.5fr , 2fr , 2fr , 0.5fr);
             grid-template-areas:
             "header header"
-            "main-inicio aside"
-            "main-inicio aside"
+            "main-inicio aside-inicio"
+            "main-inicio aside-inicio"
             "footer footer";
         }
     }
@@ -45,8 +45,8 @@
             @include grid (3fr , 1fr , 0.5fr , 2fr , 2fr , 0.5fr);
             grid-template-areas:
             "header header"
-            "main-inicio aside"
-            "main-inicio aside"
+            "main-nosotros aside-nosotros"
+            "main-nosotros aside-nosotros"
             "footer footer";
         }
     }
@@ -68,6 +68,33 @@
 
         }
         .contenedor-informacion{
+            justify-content: center;
+            @include grid (3fr , 1fr , 0.5fr , 2fr , 2fr , 0.5fr);
+            grid-template-areas:
+            "header header"
+            "main-contacto aside-contacto"
+            "main-contacto aside-contacto"
+            "footer footer";
+        }
+    }
+}
+
+/*Mediaquerys galeria*/
+@mixin tablet-galeria{
+    @media screen and (min-width:768px){
+        .aside-galeria{
+            display: block;
+        }
+    }
+}
+
+@mixin ordenador-galeria{
+    @media screen and (min-width:1024px){
+        .aside-galeria{
+            display: block;
+
+        }
+        .contenedor-fotos{
             justify-content: center;
             @include grid (3fr , 1fr , 0.5fr , 2fr , 2fr , 0.5fr);
             grid-template-areas:
