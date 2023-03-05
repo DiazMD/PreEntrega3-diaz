@@ -131,10 +131,9 @@ footer {
 @media screen and (min-width: 1024px) {
   .aside-inicio {
     display: block; }
-  .contenedor-noticias {
-    justify-content: center;
+  .contenedor-index {
     display: grid;
-    grid-template-columns: 3fr, 1fr;
+    grid-template-columns: 3fr, 0.5fr;
     grid-template-rows: 0.5fr, 2fr, 2fr, 0.5fr;
     grid-template-areas: "header header" "main-inicio aside-inicio" "main-inicio aside-inicio" "footer footer"; } }
 
@@ -175,10 +174,9 @@ footer {
 @media screen and (min-width: 1024px) {
   .aside-nosotros {
     display: block; }
-  .contenedor-cuarteles {
-    justify-content: center;
+  .contenedor-nosotros {
     display: grid;
-    grid-template-columns: 3fr, 1fr;
+    grid-template-columns: 3fr, 0.5fr;
     grid-template-rows: 0.5fr, 2fr, 2fr, 0.5fr;
     grid-template-areas: "header header" "main-nosotros aside-nosotros" "main-nosotros aside-nosotros" "footer footer"; } }
 
@@ -210,10 +208,9 @@ footer {
 @media screen and (min-width: 1024px) {
   .aside-contacto {
     display: block; }
-  .contenedor-informacion {
-    justify-content: center;
+  .contenedor-contacto {
     display: grid;
-    grid-template-columns: 3fr, 1fr;
+    grid-template-columns: 1fr, 0.5fr;
     grid-template-rows: 0.5fr, 2fr, 2fr, 0.5fr;
     grid-template-areas: "header header" "main-contacto aside-contacto" "main-contacto aside-contacto" "footer footer"; } }
 
@@ -253,10 +250,9 @@ footer {
 @media screen and (min-width: 1024px) {
   .aside-galeria {
     display: block; }
-  .contenedor-fotos {
-    justify-content: center;
+  .contenedor-galeria {
     display: grid;
-    grid-template-columns: 3fr, 1fr;
+    grid-template-columns: 3fr, 0.5fr;
     grid-template-rows: 0.5fr, 2fr, 2fr, 0.5fr;
     grid-template-areas: "header header" "main-galeria aside-galeria" "main-galeria aside-galeria" "footer footer"; } }
 
@@ -313,15 +309,14 @@ footer {
 @media screen and (min-width: 1024px) {
   .aside-inscripcion {
     display: block; }
-  .contenedor-form {
-    justify-content: center;
+  .contenedor-inscripcion {
     display: grid;
-    grid-template-columns: 3fr, 1fr;
+    grid-template-columns: 3fr, 0.5fr;
     grid-template-rows: 0.5fr, 2fr, 2fr, 0.5fr;
     grid-template-areas: "header header" "main-inscripcion aside-inscripcion" "main-inscripcion aside-inscripcion" "footer footer"; }
-    .contenedor-form .inscribite {
+    .contenedor-inscripcion .inscribite {
       width: 800px; }
-      .contenedor-form .inscribite fieldset {
+      .contenedor-inscripcion .inscribite fieldset {
         width: 500px; } }
 
 * {
