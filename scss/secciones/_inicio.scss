@@ -65,6 +65,9 @@ header{
 
 .main-inicio{
     background-color: $color-fondo;
+    h2 {@extend %titulo-noticia;
+    display: inline-block;}
+    
     .contenedor-noticias{
         @extend %contenedores;
     }
@@ -74,7 +77,7 @@ header{
         text-align: center;
         @extend %card;
         img{ @extend %foto-noticia;}
-        h2 {@extend %titulo-noticia;}
+        h3 {@extend %titulo-noticia;}
         p {@extend %texto-noticia;}
         a {@extend %boton;}
         a:hover{

@@ -12,7 +12,7 @@
   width: 200px;
   height: 200px; }
 
-.main-inicio .card-noticias h2, .main-nosotros .cuarteles h2, .main-contacto .informacion h2, .main-inscripcion .inscribite h2 {
+.main-inicio h2, .main-inicio .card-noticias h3, .main-nosotros .cuarteles h2, .main-contacto .informacion h2, .main-inscripcion .inscribite h2 {
   font-weight: 250; }
 
 .main-inicio .card-noticias p, .main-nosotros .cuarteles p, .main-contacto .informacion p, .main-inscripcion .inscribite p {
@@ -94,6 +94,8 @@ header {
   justify-content: center;
   flex-direction: column;
   grid-area: main-inicio; }
+  .main-inicio h2 {
+    display: inline-block; }
   .main-inicio .card-noticias {
     max-width: 300px;
     text-align: center; }
