@@ -96,6 +96,8 @@ header {
   grid-area: main-inicio; }
   .main-inicio h2 {
     display: inline-block; }
+  .main-inicio .contenedor-noticias {
+    max-width: 1000px; }
   .main-inicio .card-noticias {
     max-width: 300px;
     text-align: center; }

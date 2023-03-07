@@ -66,10 +66,13 @@ header{
 .main-inicio{
     background-color: $color-fondo;
     h2 {@extend %titulo-noticia;
-    display: inline-block;}
+    display: inline-block;
+
+    }
     
     .contenedor-noticias{
         @extend %contenedores;
+        max-width: 1000px;
     }
     @include main (main-inicio);
     .card-noticias{
@@ -79,7 +82,8 @@ header{
         img{ @extend %foto-noticia;}
         h3 {@extend %titulo-noticia;}
         p {@extend %texto-noticia;}
-        a {@extend %boton;}
+        a {@extend %boton;
+        }
         a:hover{
             box-shadow: 3px 3px 8px black;
             transition: 0.3s;
