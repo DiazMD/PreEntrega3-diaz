@@ -34,6 +34,6 @@ grid-area: $name-grid;
 
 @mixin grid ($valor1 , $valor2 , $valor3 , $valor4 , $valor5 , $valor6){
     display: grid;
-    grid-template-columns:($valor1 , $valor2);
-    grid-template-rows: ($valor3 , $valor4 , $valor5 , $valor6);
+    grid-template-columns:(#{$valor1} #{$valor2});
+    grid-template-rows: (#{$valor3} #{$valor4} #{$valor5} #{$valor6});
 }

@@ -14,7 +14,7 @@
 
         }
         .contenedor-index{
-            @include grid (3fr , 0.5fr , 0.5fr , 2fr , 2fr , 0.5fr);
+            @include grid (3fr, 0.5fr, 0.3fr, 2fr, 2fr, 0.3fr);
             grid-template-areas:
             "header header"
             "main-inicio aside-inicio"
@@ -40,7 +40,7 @@
         }
 
         .contenedor-nosotros{
-            @include grid (3fr , 0.5fr , 0.5fr , 2fr , 2fr , 0.5fr);
+            @include grid (3fr, 0.5fr, 0.3fr, 2fr, 2fr, 0.3fr);
             grid-template-areas:
             "header header"
             "main-nosotros aside-nosotros"
@@ -68,7 +68,7 @@
         }
         .contenedor-contacto{
 
-            @include grid (1fr , 0.5fr , 0.5fr , 2fr , 2fr , 0.5fr);
+            @include grid (3fr, 0.5fr, 0.3fr, 2fr, 2fr, 0.3fr);
             grid-template-areas:
             "header header"
             "main-contacto aside-contacto"
@@ -94,7 +94,7 @@
 
         }
         .contenedor-galeria{
-            @include grid (3fr , 0.5fr , 0.5fr , 2fr , 2fr , 0.5fr);
+            @include grid (3fr, 0.5fr, 0.3fr, 2fr, 2fr, 0.3fr);
             grid-template-areas:
             "header header"
             "main-galeria aside-galeria"
@@ -121,7 +121,7 @@
             display: block;
         }
         .contenedor-inscripcion{
-            @include grid (3fr , 0.5fr , 0.5fr , 2fr , 2fr , 0.5fr);
+            @include grid (3fr, 0.5fr, 0.3fr, 2fr, 2fr, 0.3fr);
             grid-template-areas:
             "header header"
             "main-inscripcion aside-inscripcion"
