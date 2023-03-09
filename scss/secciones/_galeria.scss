@@ -1,10 +1,10 @@
 /*Contenido de galeria*/
 .contenedor-galeria{
-    @include grid (3fr, 0.5fr, 0.3fr, 2.5fr,0fr, 0.3fr);
+    @include grid (3fr, 0.5fr, 0.3fr, 3fr, 3fr, 0.3fr);
     grid-template-areas:
     "header header"
     "main-galeria main-galeria"
-    "aside-galeria aside-galeria"
+    "main-galeria main-galeria"
     "footer footer";
 }
 

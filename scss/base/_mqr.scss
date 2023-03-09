@@ -1,6 +1,14 @@
 /*Mediaquerys inicio*/
 @mixin tablet{
     @media screen and (min-width:768px){
+        .contenedor-index{
+            @include grid (3fr, 0.5fr, 0.3fr, 2.5fr,0.5fr, 0.3fr);
+            grid-template-areas:
+            "header header"
+            "main-inicio main-inicio"
+            "aside-inicio aside-inicio"
+            "footer footer";
+        }
         .aside-inicio{
             display: block;
         }
@@ -27,6 +35,14 @@
 /*Mediaquerys nosotros*/
 @mixin tablet-nosotros{
     @media screen and (min-width:768px){
+        .contenedor-nosotros{
+            @include grid (3fr, 0.5fr, 0.3fr, 4fr, 0.5fr, 0.3fr);
+            grid-template-areas:
+            "header header"
+            "main-nosotros main-nosotros"
+            "aside-nosotros aside-nosotros"
+            "footer footer";
+        }
         .aside-nosotros{
             display: block;
         }
@@ -46,7 +62,6 @@
             "main-nosotros aside-nosotros"
             "main-nosotros aside-nosotros"
             "footer footer";
-
         }
     }
 }
@@ -57,6 +72,15 @@
         .aside-contacto{
             display: block;
         }
+        .contenedor-contacto{
+            @include grid (3fr, 0.5fr, 0.3fr, 2.5fr,0.5fr, 0.3fr);
+            grid-template-areas:
+            "header header"
+            "main-contacto main-contacto"
+            "aside-contacto aside-contacto"
+            "footer footer";
+        }
+
     }
 }
 
@@ -64,10 +88,8 @@
     @media screen and (min-width:1024px){
         .aside-contacto{
             display: block;
-
         }
         .contenedor-contacto{
-
             @include grid (3fr, 0.5fr, 0.3fr, 2fr, 2fr, 0.3fr);
             grid-template-areas:
             "header header"
@@ -81,6 +103,14 @@
 /*Mediaquerys galería*/
 @mixin tablet-galeria{
     @media screen and (min-width:768px){
+        .contenedor-galeria{
+            @include grid (3fr, 0.5fr, 0.3fr, 2.5fr,0.5fr, 0.3fr);
+            grid-template-areas:
+            "header header"
+            "main-galeria main-galeria"
+            "aside-galeria aside-galeria"
+            "footer footer";
+        }
         .aside-galeria{
             display: block;
         }
@@ -109,6 +139,14 @@
 
 @mixin tablet-inscripcion{
     @media screen and (min-width:768px){
+        .contenedor-inscripcion{
+            @include grid (3fr, 0.5fr, 0.3fr, 2.5fr,0.5fr, 0.3fr);
+            grid-template-areas:
+            "header header"
+            "main-inscripcion main-inscripcion"
+            "aside-inscripcion aside-inscripcion"
+            "footer footer";
+        }
         .aside-inscripcion{
             display: block; 
         }
