@@ -94,8 +94,6 @@ header {
   justify-content: center;
   flex-direction: column;
   grid-area: main-inicio; }
-  .main-inicio div h2 {
-    display: inline-block; }
   .main-inicio .contenedor-noticias {
     max-width: 1000px; }
   .main-inicio .card-noticias {
