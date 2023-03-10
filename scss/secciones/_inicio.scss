@@ -65,10 +65,9 @@ header{
 
 .main-inicio{
     background-color: $color-fondo;
-    h2 {@extend %titulo-noticia;
+    div h2 {@extend %titulo-noticia;
     display: inline-block;
-
-    }
+}
     
     .contenedor-noticias{
         @extend %contenedores;
@@ -119,5 +118,6 @@ footer{
      }
 }
 
-@include ordenador;
 @include tablet;
+@include ordenador;
+

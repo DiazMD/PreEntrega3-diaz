@@ -2,7 +2,7 @@
 @mixin tablet{
     @media screen and (min-width:768px){
         .contenedor-index{
-            @include grid (3fr, 0.5fr, 0.3fr, 2.5fr,0.5fr, 0.3fr);
+            @include grid (3fr, 0.5fr, 0.3fr, 4fr, 0.5fr, 0.3fr);
             grid-template-areas:
             "header header"
             "main-inicio main-inicio"
@@ -19,8 +19,8 @@
     @media screen and (min-width:1024px){
         .aside-inicio{
             display: block;
-
         }
+
         .contenedor-index{
             @include grid (3fr, 0.5fr, 0.3fr, 2fr, 2fr, 0.3fr);
             grid-template-areas:
@@ -104,7 +104,7 @@
 @mixin tablet-galeria{
     @media screen and (min-width:768px){
         .contenedor-galeria{
-            @include grid (3fr, 0.5fr, 0.3fr, 2.5fr,0.5fr, 0.3fr);
+            @include grid (3fr, 0.5fr, 0.3fr, 3fr, 0.5fr, 0.3fr);
             grid-template-areas:
             "header header"
             "main-galeria main-galeria"
@@ -140,7 +140,7 @@
 @mixin tablet-inscripcion{
     @media screen and (min-width:768px){
         .contenedor-inscripcion{
-            @include grid (3fr, 0.5fr, 0.3fr, 2.5fr,0.5fr, 0.3fr);
+            @include grid (3fr, 0.5fr, 0.3fr, 2.8fr,0.5fr, 0.3fr);
             grid-template-areas:
             "header header"
             "main-inscripcion main-inscripcion"

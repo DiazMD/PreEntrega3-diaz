@@ -12,7 +12,7 @@
   width: 200px;
   height: 200px; }
 
-.main-inicio h2, .main-inicio .card-noticias h3, .main-nosotros .cuarteles h2, .main-contacto .informacion h2, .main-inscripcion .inscribite h2 {
+.main-inicio div h2, .main-inicio .card-noticias h3, .main-nosotros .cuarteles h2, .main-contacto .informacion h2, .main-inscripcion .inscribite h2 {
   font-weight: 250; }
 
 .main-inicio .card-noticias p, .main-nosotros .cuarteles p, .main-contacto .informacion p, .main-inscripcion .inscribite p {
@@ -94,7 +94,7 @@ header {
   justify-content: center;
   flex-direction: column;
   grid-area: main-inicio; }
-  .main-inicio h2 {
+  .main-inicio div h2 {
     display: inline-block; }
   .main-inicio .contenedor-noticias {
     max-width: 1000px; }
@@ -132,6 +132,15 @@ footer {
     transform: rotate(360deg);
     transition: 0.9s; }
 
+@media screen and (min-width: 768px) {
+  .contenedor-index {
+    display: grid;
+    grid-template-columns: 3fr 0.5fr;
+    grid-template-rows: 0.3fr 4fr 0.5fr 0.3fr;
+    grid-template-areas: "header header" "main-inicio main-inicio" "aside-inicio aside-inicio" "footer footer"; }
+  .aside-inicio {
+    display: block; } }
+
 @media screen and (min-width: 1024px) {
   .aside-inicio {
     display: block; }
@@ -140,15 +149,6 @@ footer {
     grid-template-columns: 3fr 0.5fr;
     grid-template-rows: 0.3fr 2fr 2fr 0.3fr;
     grid-template-areas: "header header" "main-inicio aside-inicio" "main-inicio aside-inicio" "footer footer"; } }
-
-@media screen and (min-width: 768px) {
-  .contenedor-index {
-    display: grid;
-    grid-template-columns: 3fr 0.5fr;
-    grid-template-rows: 0.3fr 2.5fr 0.5fr 0.3fr;
-    grid-template-areas: "header header" "main-inicio main-inicio" "aside-inicio aside-inicio" "footer footer"; }
-  .aside-inicio {
-    display: block; } }
 
 /*Contenido de nosotros*/
 .contenedor-nosotros {
@@ -266,7 +266,7 @@ footer {
   .contenedor-galeria {
     display: grid;
     grid-template-columns: 3fr 0.5fr;
-    grid-template-rows: 0.3fr 2.5fr 0.5fr 0.3fr;
+    grid-template-rows: 0.3fr 3fr 0.5fr 0.3fr;
     grid-template-areas: "header header" "main-galeria main-galeria" "aside-galeria aside-galeria" "footer footer"; }
   .aside-galeria {
     display: block; } }
@@ -284,7 +284,7 @@ footer {
 .contenedor-inscripcion {
   display: grid;
   grid-template-columns: 3fr 0.5fr;
-  grid-template-rows: 0.3fr 2.5fr 0fr 0.3fr;
+  grid-template-rows: 0.3fr 4fr 0fr 0.3fr;
   grid-template-areas: "header header" "main-inscripcion main-inscripcion" "main-inscripcion main-inscripcion" "footer footer"; }
 
 .main-inscripcion {
@@ -318,7 +318,7 @@ footer {
   .main-inscripcion fieldset:hover {
     box-shadow: 1px 1px 15px #a82727;
     transition: 0.6s; }
-  .main-inscripcion .nombre-apellido, .main-inscripcion .edad, .main-inscripcion .sexo, .main-inscripcion .direccion, .main-inscripcion .mail {
+  .main-inscripcion .nombre-apellido, .main-inscripcion .edad, .main-inscripcion .sexo, .main-inscripcion .direccion, .main-inscripcion .mail, .main-inscripcion .telefono {
     display: inline-block;
     width: 250px;
     padding: 10px; }
@@ -330,7 +330,7 @@ footer {
   .contenedor-inscripcion {
     display: grid;
     grid-template-columns: 3fr 0.5fr;
-    grid-template-rows: 0.3fr 2.5fr 0.5fr 0.3fr;
+    grid-template-rows: 0.3fr 2.8fr 0.5fr 0.3fr;
     grid-template-areas: "header header" "main-inscripcion main-inscripcion" "aside-inscripcion aside-inscripcion" "footer footer"; }
   .aside-inscripcion {
     display: block; } }
