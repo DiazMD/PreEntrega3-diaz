@@ -78,7 +78,7 @@ header{
         text-align: center;
         @extend %card;
         img{ @extend %foto-noticia;}
-        h3 {@extend %titulo-noticia;}
+        h2 {@extend %titulo-noticia;}
         p {@extend %texto-noticia;}
         a {@extend %boton;
         }

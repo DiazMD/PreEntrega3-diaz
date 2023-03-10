@@ -12,7 +12,7 @@
   width: 200px;
   height: 200px; }
 
-.main-inicio div h2, .main-inicio .card-noticias h3, .main-nosotros .cuarteles h2, .main-contacto .informacion h2, .main-inscripcion .inscribite h2 {
+.main-inicio div h2, .main-inicio .card-noticias h2, .main-nosotros .cuarteles h2, .main-contacto .informacion h2, .main-inscripcion .inscribite h2 {
   font-weight: 250; }
 
 .main-inicio .card-noticias p, .main-nosotros .cuarteles p, .main-contacto .informacion p, .main-inscripcion .inscribite p {
