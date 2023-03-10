@@ -12,6 +12,7 @@
     background-color: $color-fondo;
     .contenedor-fotos{
         @extend %contenedores;
+        max-width: 1000px;
     }
 
     @include main (main-galeria);
@@ -21,6 +22,7 @@
         cursor: pointer;
         @extend %card;
         img{ @extend %foto-noticia;}
+
 
     }
     .imagen-galeria:hover{
